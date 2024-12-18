@@ -1,0 +1,279 @@
+<html>
+    <head><title>89番薯輪胎行</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:#D2E9FF;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color: pink;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:#333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #333; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #111; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #333;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#CECEFF	,#ADFEDC);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:blue;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 100px;
+            width: 100px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(25,26,30);
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://github.com/Penn944/4.jpg/blob/main/1217.png?raw=true">
+                  89番薯輪胎行
+                </div>
+                <div class="top-nav">
+                  <a href=>小物代購</a>
+                  <a href=>預購須知</a>
+                  <a href=>註冊/登入會員</a>
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">所有商品</a></li>
+                <li  class="dropdown"><a href="#faculty">商品種類</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">玩偶</a>
+                        <a href="#faculty">化妝品</a>
+                        <a href="#faculty">其他用品</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">購物車</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://github.com/Penn944/3.jpg/blob/main/LINE_ALBUM_%E8%BC%AA%E8%83%8E%E8%A1%8C%F0%9F%9B%9E_241217_1.jpg" /></li>
+                    <li><img src="https://github.com/Penn944/2.jpg/blob/main/LINE_ALBUM_%E5%BF%97%E5%BC%B736_241217_1.jpg" /></li>
+                    <li><img src="https://github.com/Penn944/1.jpg/blob/main/LINE_ALBUM_89_241217_1.jpg?raw=true" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>賣場簡介</h1>
+            <h1>單純老闆愛買</h1>
+            <h1>圖都是老闆的寵物</h1>
+            <h1>賣場的東西都是老闆自己喜歡的</h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>寵物介紹</h2>
+            <div class="container">
+                <a class="pet" href="">
+                    <img src="https://github.com/Penn944/3.jpg/blob/main/1.jpg?raw=true" />
+                    <h3>番薯輪胎</h3>
+                </a>
+                <a class="pet" href="">
+                    <img src="https://github.com/Penn944/2.jpg/blob/main/3.jpg?raw=true" />
+                    <h3>志強</h3>
+                </a>
+                <a class="pet" href="">
+                    <img src="https://github.com/Penn944/1.jpg/blob/main/LINE_ALBUM_89_241217_1.jpg?raw=true" />
+                    <h3>89</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>預購商品須等14~28天</b>
+                        <span></span>
+                        <b> 電話:03-5907099</b>
+                        <span>營業時間:11:00~20:00</span>
+                        <b> 週六日公休</b>
+                        <span>工作室兩人作業，招待不週請見諒</span>
+                    </div>
+                    <div class="right">
+                        <iframe src="data:image/jpeg;base64,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" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 黃珮庭 Tony SHHuang
+        </div>
+     </body>
+</html>
+    
